@@ -33,7 +33,7 @@ const db = {}
 db.Sequelize = Sequelize
 db.sequelize = sequelize
 
-db.users = require('./usermodel.js')(sequelize, DataTypes)
+db.users = require('./usermodel')(sequelize, DataTypes)
 
 db.address = require('./addressmodel.js')(sequelize, DataTypes)
 

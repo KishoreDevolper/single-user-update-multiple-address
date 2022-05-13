@@ -5,6 +5,7 @@ module.exports = (sequelize, DataTypes) => {
         address: {
             type: DataTypes.STRING,
         }
+        
     })
 
     return address

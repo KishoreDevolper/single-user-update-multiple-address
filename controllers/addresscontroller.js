@@ -6,11 +6,10 @@ const Joi = require("joi")
 
 const schema = Joi.object({
     product_id:Joi.string().optional(),
-    address:Joi.string().required()
+    address:Joi.string().required(),
+    user_id:Joi.string().optional()
 })
 
-
-//1. Add address
 
 const addaddress = async (req, res) => {
 
@@ -30,7 +29,6 @@ const addaddress = async (req, res) => {
 
 }
 
-// 2. Get All address
 
 const getAlladdress = async (req, res) => {
 
